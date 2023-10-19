@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7f945b80.css",
+    "main.js": "/static/js/main.c65dec0d.js",
+    "static/media/our_vision.png": "/static/media/our_vision.a8a7cfc584071622d6c6.png",
+    "static/media/rescue-3735206_1920.jpg": "/static/media/rescue-3735206_1920.ab7fc8a9a83b2d4f46b6.jpg",
+    "static/media/thubnail.png": "/static/media/thubnail.f707f5120835a8164925.png",
+    "static/media/mobile_view.png": "/static/media/mobile_view.e0f1f87146009477c9fe.png",
+    "static/media/call.png": "/static/media/call.bc366e00b2982ac8fc5d.png",
+    "static/media/whatsapp.jpg": "/static/media/whatsapp.0f74af526ffeb126190c.jpg",
+    "static/media/WhatsApp Image 2023-09-22 at 16.00.55.jpg": "/static/media/WhatsApp Image 2023-09-22 at 16.00.55.1fcb20f30a507b07cf1d.jpg",
+    "static/media/background.png": "/static/media/background.469fe96e83e2c5695605.png",
+    "static/media/icon 3 1.png": "/static/media/icon 3 1.08373774b50f8771b0ab.png",
+    "static/media/instagram.png": "/static/media/instagram.79535458a8a6d88f81d4.png",
+    "static/media/OUR_VISION_SECTION_3.png": "/static/media/OUR_VISION_SECTION_3.45368e54aff99b8fa28e.png",
+    "static/media/ambulance.png": "/static/media/ambulance.11d01f5e75c069bc4057.png",
+    "static/media/know_upper.png": "/static/media/know_upper.5afe4e31ba5a586f1006.png",
+    "static/media/OUR_VISION_SECTION_1.png": "/static/media/OUR_VISION_SECTION_1.a631193d1101a2ebb9ce.png",
+    "static/media/fast-time 1.png": "/static/media/fast-time 1.5ea46514786c4166f77a.png",
+    "static/media/twitter.png": "/static/media/twitter.7028732ef9e1ebf23a58.png",
+    "static/media/w6 2.png": "/static/media/w6 2.7487b716659f62fab25e.png",
+    "static/media/teific.png": "/static/media/teific.12176c0d97e05e18d8f6.png",
+    "static/media/linkedin.png": "/static/media/linkedin.6892b3ae328c7a1e055f.png",
+    "static/media/icon 2 2.png": "/static/media/icon 2 2.b9634f0d5e630c31303e.png",
+    "static/media/OUR_VISION_SECTION_2.png": "/static/media/OUR_VISION_SECTION_2.ae0a0d41218b2cd94d86.png",
+    "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/index.html",
+    "main.7f945b80.css.map": "/static/css/main.7f945b80.css.map",
+    "main.c65dec0d.js.map": "/static/js/main.c65dec0d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7f945b80.css",
+    "static/js/main.c65dec0d.js"
+  ]
+}

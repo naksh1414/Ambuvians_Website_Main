@@ -8,7 +8,7 @@ import { LiaStarSolid } from "react-icons/lia";
 export default function FeedbackForm() {
   const [name, setName] = useState("");
   const [nameError, setNameError] = useState("");
-  const [ email , setEmail ] = useState('Enter Email');
+  const [ email , setEmail ] = useState('');
   const [ list , setList ] = useState([]);
   const handleSubmit = (e)=>{
     e.preventDefault();
