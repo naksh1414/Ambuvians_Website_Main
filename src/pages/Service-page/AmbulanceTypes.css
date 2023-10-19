@@ -1,0 +1,435 @@
+/* types of ambulance header style */
+
+
+.ambulance-types h1 {
+    font-family: "Inknut Antiqua", serif;
+ 
+ 
+     color: #000;
+     font-size: 6vw;
+     font-style: normal;
+     font-weight: 400;
+     text-align: center;
+ }
+ 
+ /* ambulance list style */
+ 
+ .ambulance-list-div {
+     display: flex;
+     gap: 2vw;
+     margin: 2vw;
+ }
+ 
+ .ambulance-list {
+     flex: 1;
+ }
+ 
+ /* selected ambulance image style */
+ .selected-ambulance-img {
+     align-items: center;
+     display: flex;
+     justify-content: space-evenly;
+ }
+ 
+ .ambulances-img {
+     cursor: pointer;
+     font-size: 2vw;
+     font-weight: 700;
+     text-align: center;
+ }
+ .ambulance-img {
+     border-radius: 9vw;
+     height: 10vw;
+     padding: 1.5vw;
+     width: 12vw;
+ }
+ 
+ .ambulance-img-figcaption {
+   font-family: "Inknut Antiqua", serif;
+ }
+ 
+ .bgc {
+     background: linear-gradient(135deg, #0092ee 0%, #203381 100%);
+ }
+ 
+ .ambulance-detail {
+     background: linear-gradient(135deg, #0092ee 0%, #203381 100%);
+     border-radius: 2vw;
+     flex: 4;
+     padding: 3vw;
+ }
+ 
+ .ambulance-detail > article > h1 {
+     color: #fff;
+     font-size: 3.5vw;
+     font-style: normal;
+     font-weight: 700;
+ }
+ 
+ /* selected ambulance style */
+ .selected-ambulance-outer-img {
+   animation: fade-in 1s ease-in forwards;
+   -webkit-animation: fade-in 1s ease-in forwards; /* for older versions of WebKit browsers */
+ }
+ 
+ @keyframes fade-in {
+   from {
+     opacity: 0;
+   }
+   to {
+     opacity: 1;
+   }
+ }
+ 
+ /* selected ambulance inner and outer image style */
+ .selected-ambulance-outer-img,
+ .selected-ambulance-inner-img {
+     width: 25vw;
+ 
+ }
+ .selected-ambulance-outer-img:hover {
+     opacity: 0.7; /* Adjust the opacity to control the fade effect on hover */
+ }
+ /* selected ambulance detail style */
+ .selected-ambulance-detail {
+     color: #fff;
+     font-size: 2vw;
+     line-height: 3vw;
+    font-family: "Inknut Antiqua", serif;
+ }
+ 
+ /* selected ambulance feature div style */
+ 
+ .selected-ambulance-features-div {
+     align-items: center;
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     text-align: center;
+ }
+ 
+ /* selected ambulance features style */
+ 
+ .selected-ambulance-features {
+     background-color: #fff;
+ 
+     border-radius: 9vw;
+     cursor: pointer;
+     height: 16vw;
+     margin: 1vw 1.75vw 1vw 1.75vw;
+     padding: 2vw;
+     width: 16vw;
+ }
+ 
+ .flip-card {
+     background-color: #fff;
+     border-radius: 9vw;
+     cursor: pointer;
+     height: 16vw;
+     margin: 1vw 1.75vw 1vw 1.75vw;
+     padding: 2vw;
+     width: 16vw;
+     display: flex;
+     flex-direction: column;
+     align-content: center;
+     justify-content: center;
+     perspective: 1000px; /* Remove this if you don't want the 3D effect */
+ }
+ 
+ /* This container is needed to position the front and back side */
+ .flip-card-inner {
+     position: relative;
+ 
+     width: 100%;
+     height: 100%;
+     text-align: center;
+     transition: transform 0.8s;
+     transform-style: preserve-3d;
+ }
+ 
+ /* Do an horizontal flip when you move the mouse over the flip box container */
+ .flip-card:hover .flip-card-inner {
+     transform: rotateY(180deg);
+ }
+ 
+ /* Position the front and back side */
+ .flip-card-front,
+ .flip-card-back {
+     position: absolute;
+     width: 100%;
+     height: 100%;
+ 
+     -webkit-backface-visibility: hidden; /* Safari */
+     backface-visibility: hidden;
+ }
+ 
+ /* Style the front side (fallback if image is missing) */
+ .flip-card-front {
+     color: black;
+ }
+ 
+ .flip-card-front p {
+     font-size: 1.2vw;
+   font-family: "Inknut Antiqua", serif;
+ }
+ 
+ .flip-card-back h3 {
+     font-size: 1.8vw;
+  font-family: "Inknut Antiqua", serif;
+ }
+ .flip-card-back p {
+     font-size: 1.5vw;
+  font-family: "Inknut Antiqua", serif;
+ }
+ 
+ .flip-card-front img {
+     width: 9vw;
+     height: 80%;
+ }
+ 
+ /* Style the back side */
+ .flip-card-back {
+     transform: rotateY(180deg);
+ }
+ 
+ @media (min-width: 1441px) {
+     .flip-card-front p {
+         font-size: 1.2vw;
+     }
+ 
+     .flip-card-back h3 {
+         font-size: 1.5vw;
+         margin-bottom: -1vw;
+     }
+ 
+     .flip-card-back p {
+         font-size: 1.3vw;
+     }
+ }
+ 
+ /* 
+   ##Device = Laptops, Desktops
+   ##Screen = B/w 1025px to 1280px
+ */
+ 
+ @media (min-width: 1280px) and (max-width: 1440px) {
+     .flip-card {
+         width: 16vw;
+     }
+ 
+     .flip-card-front p {
+         font-size: 1.2vw;
+     }
+ 
+     .flip-card-back h3 {
+         font-size: 1.5vw;
+         margin-bottom: -1vw;
+     }
+ 
+     .flip-card-back p {
+         font-size: 1.3vw;
+     }
+ }
+ 
+ @media (min-width: 1024px) and (max-width: 1280px) {
+     .flip-card-front p {
+         font-size: 1.2vw;
+     }
+ 
+     .flip-card-back h3 {
+         font-size: 1.5vw;
+         margin-bottom: -2vw;
+     }
+ 
+     .flip-card-back p {
+         font-size: 1.3vw;
+     }
+ }
+ 
+ /* 
+   ##Device = Tablets, Ipads (portrait)
+   ##Screen = B/w 768px to 1024px
+ */
+ 
+ @media (min-width: 768px) and (max-width: 1023px) {
+     .flip-card-front p {
+         font-size: 1.2vw;
+     }
+ 
+     .flip-card-back h3 {
+         font-size: 1.5vw;
+         margin-bottom: -2vw;
+     }
+ 
+     .flip-card-back p {
+         font-size: 1.3vw;
+     }
+ }
+ 
+ @media (min-width: 425px) and (max-width: 767px) {
+     .flip-card-front p {
+         font-size: 1.2vw;
+     }
+ 
+     .flip-card-back h3 {
+         font-size: 1.5vw;
+         margin-bottom: -3vw;
+     }
+ 
+     .flip-card-back p {
+         font-size: 1.3vw;
+     }
+ }
+ 
+ /* 
+   ##Device = Most of the Smartphones Mobiles (Portrait)
+   ##Screen = B/w 320px to 479px
+ */
+ 
+ @media (min-width: 320px) and (max-width: 425px) {
+     .flip-card-front p {
+         font-size: 1.2vw;
+     }
+ 
+     .flip-card-back h3 {
+         font-size: 1.5vw;
+         margin-bottom: -5vw;
+     }
+ 
+     .flip-card-back p {
+         font-size: 1.3vw;
+     }
+ 
+     .selected-ambulance-features {
+         height: 18vw;
+ 
+         width: 18vw;
+     }
+ 
+     .flip-card {
+         border-radius: 10vw;
+     }
+ }
+ 
+ /* 
+ ##Device = Desktops
+ ##Screen = 1281px to higher resolution desktops
+ */
+ 
+ @media (min-width: 769px) and (max-width: 1024px) {
+     .underline {
+         background-size: 30% 5px;
+     }
+ }
+ /* 
+ ##Device = Low Resolution Tablets, Mobiles (Landscape)
+ ##Screen = B/w 481px to 767px
+ */
+ 
+ @media (min-width: 481px) and (max-width: 768px) {
+     .customer-support-figcaption {
+         font-size: 2vw;
+     }
+     .underline {
+         background-size: 30% 5px;
+     }
+    
+ }
+ 
+ /* 
+ ##Device = Most of the Smartphones Mobiles (Portrait)
+ ##Screen = B/w 320px to 479px
+ */
+ 
+ @media (min-width: 320px) and (max-width: 480px) {
+     .underline {
+         background-size: 30% 3px;
+     }
+ 
+     .selected-ambulance-feature-p {
+         font-size: 1.5vw;
+     }
+   
+ }
+ 
+ .next,
+ .prev {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   width: 40px;
+   padding-bottom: 40px;
+   border-radius: 50%;
+   box-sizing: border-box;
+   border: 3px solid #333;
+ }
+ 
+ .prev:before {
+   content: "";
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 40%;
+   padding-bottom: 35%; /* Maintain a 1:1 aspect ratio */
+   border-left: 4px solid #333;
+   border-bottom: 4px solid #333;
+   -webkit-transform: translate(-30%, -50%) rotate(45deg);
+   transform: translate(-30%, -50%) rotate(45deg);
+ }
+ 
+ .next:before {
+   content: "";
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 40%;
+   padding-bottom: 35%; /* Maintain a 1:1 aspect ratio */
+   border-right: 4px solid #333;
+   border-bottom: 4px solid #333;
+   -webkit-transform: translate(-70%, -50%) rotate(-45deg);
+   transform: translate(-70%, -50%) rotate(-45deg);
+ }
+ @media  (max-width:560px) {
+     .next,
+ .prev {
+   position: relative;
+   display: inline-block;
+   cursor: pointer;
+   width: 30px; /* "" width */
+   padding-bottom: 30px; /* "" padding */
+   border-radius: 50%;
+   box-sizing: border-box;
+   border: 3px solid #333;
+ }
+ 
+ .prev:before {
+   content: "";
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 40%;
+   padding-bottom: 25%; 
+   border-left: 4px solid #333;
+   border-bottom: 4px solid #333;
+   -webkit-transform: translate(-30%, -50%) rotate(45deg);
+   transform: translate(-30%, -50%) rotate(45deg);
+ }
+ 
+ .next:before {
+   content: "";
+   position: absolute;
+   left: 50%;
+   top: 50%;
+   width: 40%;
+   padding-bottom: 25%; 
+   border-right: 4px solid #333;
+   border-bottom: 4px solid #333;
+   -webkit-transform: translate(-70%, -50%) rotate(-45deg);
+   transform: translate(-70%, -50%) rotate(-45deg);
+ }
+ 
+ }
+ .selected-ambulance-inner-img{
+     border: 0.4vw solid black;
+     border-radius: 1vw;
+ }

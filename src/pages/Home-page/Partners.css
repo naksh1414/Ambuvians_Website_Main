@@ -1,0 +1,252 @@
+.ourPartners {
+  display: flex;
+  margin-top: 3rem;
+  align-items: center;
+  justify-content: center;
+}
+.ourPartners a {
+  font-weight: 900;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 4rem;
+  background: -webkit-linear-gradient(0deg, #48abe0 0%, #00478f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  transition: 0.15s all ease-in-out;
+}
+.ourPartners a:hover {
+  transform: scale(1.05);
+  background: -webkit-linear-gradient(0deg, #004081 0%, #429ecf 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.partners {
+  display: flex;
+  align-items: center;
+  gap: 5vw;
+  justify-content: center;
+  text-align: center;
+}
+
+figcaption {
+  font-size: 1.5vw;
+  font-weight: 700;
+}
+
+.side-partner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2vw;
+}
+.partners img {
+  height: auto;
+  width: 33vw;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  transition: 0.15s all ease;
+}
+
+.partners a:hover {
+  transform: scale(1.05);
+}
+.side-partner img {
+  width: 20vw;
+}
+
+@media (min-width: 2561px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 4.75vw;
+  }
+  .partners img {
+    width: 22vw;
+  }
+  .side-partner img {
+    width: 19vw;
+  }
+  .partners {
+    margin-bottom: 2.5vw;
+  }
+}
+@media (min-width: 2101px) and (max-width: 2560px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 4.75vw;
+  }
+  .partners img {
+    width: 22vw;
+  }
+  .side-partner img {
+    width: 19vw;
+  }
+  .partners {
+    margin-bottom: 2.5vw;
+  }
+}
+@media (min-width: 1441px) and (max-width: 2100px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 4.75vw;
+  }
+  .partners img {
+    width: 22vw;
+  }
+  .side-partner img {
+    width: 19vw;
+  }
+  .partners {
+    margin-bottom: 2.5vw;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 4.75vw;
+  }
+  .partners img {
+    width: 23vw;
+  }
+  .side-partner img {
+    width: 19vw;
+  }
+  .partners {
+    margin-bottom: 3vw;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 4.75vw;
+  }
+  .partners img {
+    width: 23vw;
+  }
+  .side-partner img {
+    width: 19vw;
+  }
+  .partners {
+    margin-bottom: 3vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 4.75vw;
+  }
+  .partners img {
+    width: 23vw;
+  }
+  .side-partner img {
+    width: 19vw;
+  }
+  .partners {
+    margin-bottom: 3vw;
+  }
+}
+
+
+
+@media (min-width: 601px) and (max-width: 767px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 5.5vw;
+  }
+  .partners img {
+    width: 23vw;
+  }
+  .side-partner img {
+    width: 19vw;
+  }
+  .partners {
+    margin-bottom: 4vw;
+  }
+}
+
+@media (max-width: 600px) {
+  .partners{
+    flex-direction: column;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 600px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 6vw;
+  }
+  .partners img {
+    width: 28vw;
+  }
+  .side-partner img {
+    width: 24vw;
+  }
+  .partners {
+    margin-bottom: 4vw;
+  }
+  figcaption {
+    font-size: 2.75vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 6vw;
+  }
+  .partners img {
+    width: 28vw;
+  }
+  .side-partner img {
+    width: 24vw;
+  }
+  .partners {
+    margin-bottom: 4vw;
+  }
+  figcaption {
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 319px) {
+  .ourPartners {
+    margin-top: 0.5vw;
+  }
+  .ourPartners a {
+    font-size: 8vw;
+  }
+  .partners img {
+    width: 28vw;
+  }
+  .side-partner img {
+    width: 24vw;
+  }
+  .partners {
+    margin-bottom: 4vw;
+  }
+  figcaption {
+    font-size: 3vw;
+  }
+}
+

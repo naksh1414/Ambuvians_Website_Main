@@ -1,0 +1,84 @@
+/* title heading style */
+/* .title1 h1 {
+    background: linear-gradient(to right, #0092ee 0%, #203381 100%);
+    background-clip: text;
+
+    -webkit-background-clip: text;
+font-family: "Inknut Antiqua", serif;
+
+    font-size: 5vw;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+} */
+
+/* title paragraph style */
+
+/* .title1 p {
+    color: rgba(3, 5, 36, 0.46);
+  font-family: "Inknut Antiqua", serif;
+    font-size: 2.25vw;
+    font-style: normal;
+
+    font-weight: 700;
+    text-align: center;
+} */
+
+
+
+ 
+.title1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.title1 h1 {
+  background: linear-gradient(to right, #0092ee 0%, #203381 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 5vw;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  -webkit-text-fill-color: transparent;
+  margin-bottom: 10px; 
+}
+
+
+.title1 p {
+  color: rgba(3, 5, 36, 0.46);
+  font-family: "Inknut Antiqua", serif;
+  font-size: 2.25vw;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 10px; 
+}
+
+
+.title1 .slogan {
+
+ color: black;
+  font-family: "Inknut Antiqua", serif;
+  font-size: 2.25vw;
+  font-style: normal;
+  font-weight: 700;
+  text-align: center;
+  margin-top: -30px; 
+}
+@media (max-width:360px) {
+  .title1 .slogan {
+   margin-top: -20px; 
+  }
+}
+
+
+
+
+
+
+ 

@@ -1,0 +1,218 @@
+/* Overall feedback component container */
+.feedback-comp {
+    margin: 100px 0;
+    position: relative;
+}
+
+/* Main feedback section, contains form and image */
+.main-feedback-section {
+    display: flex;
+    margin: 50px 0;
+}
+
+/* Feedback header style */
+.feedback-header h1 {
+    text-align: center;
+    font-size: 3.5vw;
+    margin: 30px 0;
+    color: rgb(8, 145, 178);
+   
+}
+label{
+    padding-left: 10px;
+}
+
+/* Feedback form on the left side */
+.feedback-comp .feedback-form-left {
+    margin: 0 0 0 20px;
+    flex: 50%;
+    background-color: rgb(59, 130, 246, 0.3);
+    border-radius: 20px;
+    text-align: center;
+    padding: 50px;
+    box-shadow: 5px 5px 20px 1px grey;
+}
+
+/* Paragraph inside the form */
+.feedback-comp .feedback-form-left .para {
+    font-size: 1.5vw;
+    padding: 0 0 10px;
+    margin-bottom: 10px;
+}
+
+/* Type of feedback section */
+.feedback-comp .type {
+    background-color: white;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+/* Radio button labels for feedback type */
+.type .type-checks {
+    display: flex;
+    justify-content: center;
+}
+
+/* Style for hovering over radio buttons */
+.type-checks input:hover {
+    cursor: pointer;
+}
+
+/* Type section title */
+.type h2 {
+    padding-bottom: 10px;
+}
+
+/* Styling for radio button labels */
+.type label {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+/* Textarea for user feedback */
+.user-feedback textarea {
+    width: 100%;
+    margin: 20px 0;
+    padding: 5px;
+    border-radius: 15px;
+    border: 2px solid #0093E9;
+    padding-left: 20px;
+
+}
+
+/* Label for the name input field */
+.name-sec label {
+    font-size: 1.11vw;
+}
+
+/* Styling for the name input field */
+.name-sec input {
+    width: 100%;
+    height: 35px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    border: 2px solid #0093E9;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Label for the email input field */
+.email-sec label {
+    font-size: 1.11vw;
+}
+
+/* Styling for the email input field */
+.email-sec input {
+    width: 100%;
+    border: 2px solid #0093E9;
+    height: 35px;
+    border-radius: 50px;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 15px;
+}
+
+/* Alignment for name and email sections */
+.name-sec, .email-sec {
+    text-align: left;
+}
+
+/* Section for rating feedback */
+.rate-us {
+    background-color: aliceblue;
+    padding: 15px;
+    border-radius: 20px;
+    margin-top: 10px;
+    font-size: 20px;
+
+}
+
+/* Hidden radio buttons for rating stars */
+.rate-us input[type=radio] {
+    display: none;
+}
+
+/* Styling for star icons */
+.star {
+    cursor: pointer;
+}
+
+/* Styling for the submit button */
+.feedback-submit-btn input {
+    width: 200px;
+    color: white;
+    height: 40px;
+    border: none;
+    border-radius: 20px;
+    font-size: 20px;
+    margin: 20px 0;
+    background: rgb(244,243,246);
+background: linear-gradient(90deg, rgba(244,243,246,1) 0%, rgba(7,173,230,1) 0%, rgba(23,78,241,1) 100%, rgba(255,255,255,1) 100%, rgba(255,255,255,1) 100%);
+}
+
+/* Hover effect for the submit button */
+.feedback-submit-btn input:hover {
+    scale: 1.1;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+/* Right side image */
+.feedback-comp .feedback-img {
+    flex: 50%;
+    font-size: 300px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 770px) {
+    .feedback-comp {
+        margin: 5px;
+    }
+
+    .main-feedback-section {
+        flex-direction: column-reverse;
+        display: flex;
+        margin: 5px 0;
+    }
+
+    .feedback-header h1 {
+        margin: 50px 0 20px 0;
+        font-size: 30px;
+    }
+
+    .feedback-comp .feedback-form-left {
+        margin-left: 0;
+        padding: 15px;
+        margin-bottom: 60px;
+    }
+
+    .feedback-form-left .para p {
+        font-size: 11px;
+        margin: 10px 0;
+    }
+
+    .type .type-checks {
+        display: block;
+        text-align: left;
+    }
+
+    .type-checks input {
+        margin: 5px 0;
+    }
+
+    .type-checks label {
+        font-size: 14px;
+    }
+
+    .name-sec label {
+        font-size: 16px;
+    }
+
+    .email-sec label {
+        font-size: 16px;
+    }
+
+    .feedback-img {
+        display: none;
+    }
+}

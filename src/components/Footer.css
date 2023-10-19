@@ -1,0 +1,809 @@
+* {
+  box-sizing: border-box;
+  /* font-family: "Kaisei Decol", Calibri, serif; */
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: white;
+  display: block;
+  margin: 0px;
+  overflow-x: hidden;
+  padding: 0px;
+  position: relative;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 100%;
+}
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Adding style to navbar */
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+body {
+  margin: 0;
+  display: grid;
+}
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #9b9b9b;
+  line-height: 3.8;
+  font-size: 90px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+#footer {
+  display: flex;
+  flex-flow: row wrap;
+  padding: 50px;
+  background-color: black;
+  color: white;
+  justify-content: space-evenly;
+  padding: 20px;
+  font-family: "Inknut Antiqua", serif;
+  line-height: 1.5;
+}
+.Knowus,
+.Services,
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.Knowus li,
+.Services li,
+.contact li {
+  display: flex;
+  list-style: none;
+  margin-bottom: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact li {
+  justify-content: flex-start;
+}
+
+.fa-solid,
+.fa-brands {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.Knowus ul a,
+.Services ul a,
+.contact ul a {
+  color: white;
+  text-decoration: none;
+}
+
+.contact {
+  line-height: 2;
+}
+.contact .about-h2 {
+  margin-bottom: 3rem;
+}
+
+.Knowus ul,
+.Services ul,
+.contact ul {
+  padding: 0;
+}
+
+.Services a:hover {
+  font-size: 18px;
+  transition: 0.3s;
+}
+.Knowus a:hover {
+  font-size: 18px;
+  transition: 0.3s;
+}
+
+.contact li {
+  display: flex;
+  align-items: center;
+}
+
+.subscribe-button {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 50px;
+  margin-left: 23px;
+  margin-bottom: 25px;
+  line-height: 35px;
+  width: 160px;
+  height: 35px;
+  border-radius: 20px;
+  border: none;
+  overflow: hidden;
+  color: ghostwhite;
+  background: linear-gradient(90deg, rgb(29, 29, 222) 0%, rgb(8, 64, 195) 100%);
+  cursor: pointer;
+}
+.subscribe-button:hover {
+  cursor: pointer;
+  scale: 1.2;
+  transition: 0.3s;
+}
+/* Follow Us styling */
+.icons {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+  gap: 4vw;
+  margin: 8px 0;
+}
+
+.icons img {
+  width: 25px;
+  height: auto;
+}
+
+.icons img:hover {
+  cursor: pointer;
+  scale: 1.3;
+  transition: 0.3s;
+}
+/* Get The app Styling */
+div.pic {
+  display: flex;
+}
+.pic img {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 0;
+  width: 15vh;
+}
+img.play-store {
+  margin-top: 0px;
+  height: 6vh;
+}
+img.app-store {
+  margin: 10px;
+}
+
+img.play-store:hover, 
+img.app-store:hover {
+    cursor: pointer;
+}
+/* contact us styling */
+.about-h2 {
+  text-align: center;
+}
+
+a[href^="tel:"] {
+  color: white;
+  text-decoration: none;
+}
+a[href^="mailto:"] {
+  color: white;
+  text-decoration: none;
+}
+a[href^="geo:"] {
+  color: white;
+  text-decoration: none;
+}
+
+.contact li span {
+  margin-left: 10px;
+  margin-top: -26px;
+}
+.contact li img {
+  width: 2.5vw;
+}
+/* copyright styling */
+.copyright {
+  text-align: center;
+  background-color: black;
+  color: #9f9f9f;
+  position: relative;
+  margin-top: -3vh;
+}
+
+/* Responsive Footer */
+@media (min-width: 2561px) {
+  .showing-heading {
+    display: none;
+  }
+}
+@media (min-width: 2101px) and (max-width: 2560px) {
+  .showing-heading {
+    display: none;
+  }
+}
+@media (min-width: 1441px) and (max-width: 2100px) {
+  .showing-heading {
+    display: none;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .showing-heading {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .showing-heading {
+    display: none;
+  }
+}
+@media (min-width: 841px) and (max-width: 1025px) {
+  .hidden-heading {
+    display: none;
+  }
+  .get {
+    order: 1; /* Change the order of .get to appear at the bottom */
+  }
+  .Knowus,
+  .Services {
+    flex-basis: 72%;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 840px) {
+  .get-app {
+    text-align: center;
+  }
+  .about-h2 {
+    text-align: unset;
+  }
+  .hidden-heading {
+    display: none;
+  }
+  .get {
+    order: 1; /* Change the order of .get to appear at the bottom */
+  }
+  .contact {
+    flex-basis: 98%;
+  }
+  .Knowus,
+  .Services {
+    flex-basis: 48%;
+  }
+}
+
+@media (max-width: 700px) {
+  .get {
+    order: 1; /* Change the order of .get to appear at the bottom */
+  }
+  footer {
+    bottom: unset;
+  }
+  .Knowus {
+    flex-basis: 98%;
+  }
+  .Knowus:nth-child(2),
+  .Services,
+  .contact {
+    flex-basis: 97%;
+  }
+  .showing-heading {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+  .hidden-heading {
+    display: none;
+  }
+  .about-h2 {
+    text-align: unset;
+  }
+  .get-app {
+    text-align: center;
+  }
+}
+
+.form-close-btn {
+  position: absolute;
+  right: 5%;
+  top: 4%;
+  cursor: pointer;
+}
+
+.form {
+  background-color: #3387e8;
+  position: absolute;
+  padding: 2vw 3vw;
+  border-radius: 1vw;
+  bottom: 1%;
+  left: 35%;
+  width: 30vw;
+  height: 32vw;
+  z-index: 2;
+}
+
+.form h1 {
+  color: #fff;
+  font-size: 4vw;
+  text-align: center;
+}
+
+.form-title {
+  margin-bottom: 1vw;
+}
+.form-item {
+  display: flex;
+  flex-direction: column;
+  gap: 1vw;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-item input,
+select {
+  padding-left: 1vw;
+  padding: 0.5vw;
+  border-radius: 0.5vw;
+  border: none;
+  font-family: "Kaisei Decol", Calibri, serif;
+}
+
+.submit {
+  background-color: #d0bed2;
+  padding: 0.5vw 2vw;
+  border-radius: 0.5vw;
+  width: 13vw;
+  align-self: center;
+  text-align: center;
+}
+
+.form-logo {
+  background: #fff;
+  padding: 0.5vw;
+  text-align: center;
+  align-self: center;
+  border-radius: 1vw;
+  width: 23vw;
+}
+
+.form-para-1 {
+  color: #fff;
+  font-size: 1.5vw;
+  padding: 0vw 1vw;
+  text-align: center;
+}
+
+.form-para-2 {
+  font-weight: 700;
+  background-color: #d0bed2;
+  font-size: 1.6vw;
+
+  padding: 0.5vw 2vw;
+  border-radius: 0.5vw;
+  width: 13vw;
+  align-self: center;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .form {
+    bottom: 6%;
+  }
+}
+
+@media (min-width: 2561px) {
+  .form-close-btn {
+    font-size: 5rem;
+  }
+  .form {
+    width: 30vw;
+    height: 36vw;
+  }
+  .form-title {
+    margin-bottom: 2vw;
+  }
+  .form-item input,
+  select {
+    font-size: 1.3vw;
+  }
+
+  .submit {
+    font-size: 1.3vw;
+    margin-top: 2vw;
+  }
+
+  .form-logo {
+    width: 20vw;
+  }
+  .form-logo img {
+    width: 20vw;
+  }
+
+  .form h1 {
+    font-size: 3vw;
+  }
+
+  .form-title {
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .contact li img {
+    width: 3vw;
+  }
+}
+@media (min-width: 2101px) and (max-width: 2560px) {
+  .form-close-btn {
+    font-size: 5rem;
+  }
+  .form {
+    width: 30vw;
+    height: 36vw;
+  }
+  .form-title {
+    margin-bottom: 2vw;
+  }
+  .form-item input,
+  select {
+    font-size: 1.3vw;
+  }
+
+  .submit {
+    font-size: 1.3vw;
+    margin-top: 2vw;
+  }
+  .form-logo {
+    width: 20vw;
+  }
+  .form-logo img {
+    width: 20vw;
+  }
+
+  .form h1 {
+    font-size: 3vw;
+  }
+
+  .form-title {
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .contact li img {
+    width: 3vw;
+  }
+}
+@media (min-width: 1441px) and (max-width: 2100px) {
+  .form-close-btn {
+    font-size: 5rem;
+  }
+  .form {
+    width: 30vw;
+    height: 36vw;
+  }
+  .form-title {
+    margin-bottom: 2vw;
+  }
+  .form-item input,
+  select {
+    font-size: 1.3vw;
+  }
+
+  .submit {
+    font-size: 1.3vw;
+    margin-top: 2vw;
+  }
+  .form-logo {
+    width: 20vw;
+  }
+  .form-logo img {
+    width: 20vw;
+  }
+
+  .form h1 {
+    font-size: 3vw;
+  }
+
+  .form-title {
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .contact li img {
+    width: 3vw;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .form-close-btn {
+    font-size: 3rem;
+  }
+  .form {
+    width: 30vw;
+    height: 36vw;
+  }
+  .form-title {
+    margin-bottom: 2vw;
+  }
+  .form-item input,
+  select {
+    font-size: 1.3vw;
+  }
+
+  .submit {
+    font-size: 1.3vw;
+    margin-top: 2vw;
+  }
+  .form-logo img {
+    width: 20vw;
+  }
+
+  .form h1 {
+    font-size: 3vw;
+  }
+
+  .form-title {
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .contact li img {
+    width: 3vw;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .form-close-btn {
+    font-size: 3rem;
+  }
+  .form {
+    width: 30vw;
+    height: 36vw;
+  }
+  .form-title {
+    margin-bottom: 2vw;
+  }
+  .form-item input,
+  select {
+    font-size: 1.3vw;
+  }
+
+  .submit {
+    font-size: 1.3vw;
+    margin-top: 2vw;
+  }
+  .form-logo {
+    width: 20vw;
+  }
+  .form-logo img {
+    width: 20vw;
+  }
+
+  .form h1 {
+    font-size: 3vw;
+  }
+
+  .form-title {
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .contact li img {
+    width: 3vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .form {
+    width: 30vw;
+    height: 36vw;
+  }
+  .form-title {
+    margin-bottom: 2vw;
+  }
+  .form-item input,
+  select {
+    font-size: 1.3vw;
+  }
+
+  .submit {
+    font-size: 1.3vw;
+    margin-top: 2vw;
+  }
+  .form-logo {
+    width: 20vw;
+  }
+  .form-logo img {
+    width: 20vw;
+  }
+  .form-close-btn {
+    font-size: 2rem;
+  }
+  .form h1 {
+    font-size: 3vw;
+  }
+
+  .form-title {
+    margin-bottom: 2vw;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .contact li img {
+    width: 3vw;
+  }
+}
+
+/* 
+  ##Device = Tablets, Ipads (portrait)
+  ##Screen = B/w 768px to 1024px
+*/
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  .form {
+    width: 30vw;
+    height: 38vw;
+  }
+
+  .form-title {
+    margin-bottom: 3vw;
+  }
+
+  .submit {
+    margin-top: 1vw;
+  }
+
+  .form-para-2 {
+    margin-top: 1.5vw;
+  }
+  .form-close-btn {
+    font-size: 1.6rem;
+  }
+  .form h1 {
+    font-size: 2.5vw;
+  }
+
+  .form-title {
+    margin-bottom: 3.5vw;
+    font-size: 2vw;
+    text-align: center;
+  }
+  .contact li img {
+    width: 5vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .form {
+    width: 60vw;
+    height: 50vw;
+    top: 88%;
+    left: 18%;
+  }
+  .form h1 {
+    font-size: 6vw;
+  }
+
+  .form-title {
+    margin-bottom: 3.5vw;
+    font-size: 4vw;
+    text-align: center;
+  }
+  .submit {
+    margin-top: 1vw;
+  }
+  .form-logo {
+    width: 30vw;
+  }
+  .form-logo img {
+    width: 30vw;
+  }
+
+  .form-para-2 {
+    margin-top: 2.5vw;
+  }
+  .form-item input,
+  select {
+    font-size: 4vw;
+    width: 100%;
+  }
+
+  .submit {
+    font-size: 3vw;
+    margin-top: 10vw;
+  }
+
+  .form-close-btn {
+    font-size: 2rem;
+  }
+  .form {
+    bottom: 7.5%;
+  }
+  .contact li img {
+    width: 7vw;
+  }
+}
+
+/* 
+  ##Device = Most of the Smartphones Mobiles (Portrait)
+  ##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 319px) and (max-width: 480px) {
+  .form {
+    width: 60vw;
+    height: 65vw;
+    top: 90%;
+    left: 18%;
+  }
+  .form h1 {
+    font-size: 5vw;
+  }
+
+  .form-title {
+    margin-bottom: 3.5vw;
+    font-size: 4vw;
+    text-align: center;
+  }
+  .submit {
+    margin-top: 1vw;
+  }
+  .form-logo {
+    width: 40vw;
+  }
+  .form-logo img {
+    width: 40vw;
+  }
+
+  .form-para-2 {
+    margin-top: 2.5vw;
+  }
+  .form-item input,
+  select {
+    font-size: 3.5vw;
+    width: 100%;
+  }
+
+  .submit {
+    font-size: 3vw;
+    margin-top: 5vw;
+  }
+
+  .form-close-btn {
+    font-size: 2rem;
+  }
+  .form {
+    bottom: 7.5%;
+  }
+  .contact li img {
+    width: 7vw;
+  }
+}

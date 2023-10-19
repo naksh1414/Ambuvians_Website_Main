@@ -1,0 +1,99 @@
+.customer-support-div {
+    margin-top: 2vh;
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: 100vw;
+    height: 70vw; /* You must set a specified height */
+    position: relative;
+    margin-bottom: -14vw;
+}
+
+/* .customer support heading style */
+
+.customer-support h1 {
+    color: #000;
+    font-size: 6vw;
+    font-style: normal;
+    font-weight: 700;
+    text-align: center;
+}
+
+/* customer support figure tag style */
+.customer-support-figure {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/* customer support img style */
+
+.customer-support-img {
+    height: 15vw;
+    text-align: center;
+    width: 15vw;
+}
+
+/* 
+##Device = Desktops
+##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+    .customer-support-div {
+        margin-bottom: -8vw;
+    }
+    .customer-support-figcaption {
+   font-family: "Inknut Antiqua", serif;
+}
+    
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .underline {
+        background-size: 30% 5px;
+    }
+    .customer-support-div {
+        margin-bottom: -10vw;
+    }
+    .customer-support-figcaption {
+   font-family: "Inknut Antiqua", serif;
+}
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    .underline {
+        background-size: 30% 5px;
+    }
+    .customer-support-div {
+        margin-bottom: -12vw;
+    }
+}
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 768px) {
+    .underline {
+        background-size: 30% 5px;
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .customer-support-figcaption {
+        font-size: 2.2vw;
+    }
+
+    .underline {
+        background-size: 30% 3px;
+    }
+    .customer-support-div {
+        margin-bottom: -19vw;
+    }
+}

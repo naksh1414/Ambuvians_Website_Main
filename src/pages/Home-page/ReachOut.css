@@ -1,0 +1,114 @@
+.whatsapp {
+    z-index: 500;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    bottom: 40px;
+    left: 10px;
+    background: transparent;
+}
+.whatsapp img {
+    animation: fromleft 0.9s;
+    width: 60px;
+    transition: all ease 0.15s;
+    background: transparent;
+}
+#call {
+    width: 50px;
+    padding: 10px;
+}
+.whatsapp img:hover {
+    transform: scale(1.2);
+}
+
+@media only screen and (max-width: 1270px) {
+    .whatsapp {
+        bottom: 12px;
+        left: 10px;
+    }
+    .whatsapp img {
+        width: 8vw;
+    }
+    #call {
+        width: 8vw;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .whatsapp {
+        bottom: 10px;
+        left: 8px;
+    }
+    .whatsapp img {
+        width: 4vw;
+    }
+    #call {
+        width: 3.5vw;
+    }
+}
+
+@media only screen and (max-width: 1440px) {
+    .whatsapp {
+        bottom: 9px;
+        left: 7px;
+    }
+    .whatsapp img {
+        width: 4.5vw;
+    }
+    #call {
+        width: 4vw;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .whatsapp {
+        bottom: 8px;
+        left: 6px;
+    }
+    .whatsapp img {
+        width: 4vw;
+    }
+    #call {
+        width: 4vw;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .whatsapp {
+        bottom: 7px;
+        left: 5px;
+    }
+    .whatsapp img {
+        width: 5vw;
+    }
+    #call {
+        width: 5vw;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .whatsapp {
+        bottom: 6px;
+        left: 4px;
+    }
+    .whatsapp img {
+        width: 8vw;
+    }
+    #call {
+        width: 8vw;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .whatsapp {
+        bottom: 5px;
+        left: 3px;
+    }
+    .whatsapp img {
+        width: 10vw;
+    }
+    #call {
+        width: 10vw;
+    }
+}

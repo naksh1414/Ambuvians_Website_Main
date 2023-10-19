@@ -1,0 +1,599 @@
+.First-section {
+  margin-bottom: 6vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  display: flex;
+  position: relative;
+  width: 50vw;
+  height: min-content;
+}
+
+.right {
+  display: flex;
+  position: relative;
+  justify-content: end;
+}
+
+#bg {
+  position: absolute;
+  right: 0;
+  z-index: -1;
+  width: 100%;
+  height: -webkit-fill-available;
+  opacity: 0.9;
+}
+
+.left {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 50vw;
+  height: auto;
+  z-index: 2;
+}
+.left #ambuvians {
+  font-family: "Inknut Antiqua", serif;
+  text-decoration: none;
+  font-size: 70px;
+  font-weight: 800;
+  margin-top: 20%;
+  margin-left: 5rem;
+  width: max-content;
+  height: fit-content;
+  background: -webkit-linear-gradient(0deg, #48abe0 0%, #00478f 100%);
+  -webkit-background-clip: text;
+  position: relative;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.left .slogan {
+  text-decoration: none;
+  text-align: center;
+  font-size: 25px;
+  width: 60%;
+  height: auto;
+  margin-left: 5rem;
+  font-family: "Inknut Antiqua", serif;
+  color: #1e1e1e;
+  position: relative;
+}
+
+
+
+#facts {
+  width: 300px;
+  height: 75px;
+  margin-top: 3rem;
+  margin-left: 6rem;
+  font-size: larger;
+  text-align: center;
+  font-family: "Inknut Antiqua", serif;
+  transition: 0.15s all ease-in-out;
+  /* for border */
+  border: 5px solid;
+  border-image-slice: 1;
+  border-image-source: -webkit-linear-gradient(0deg, #48abe0 0%, #00478f 100%);
+  /* color: #48abe0; */
+  /* for font */
+  background: -webkit-linear-gradient(0deg, #48abe0 0%, #00478f 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* background: transparent; */
+}
+#facts:hover {
+  font-size: x-large;
+}
+
+@media (min-width: 2561px) {
+  .First-section {
+    margin-bottom: 3vw;
+  }
+  .right {
+    margin-left: 40vw;
+    width: 60vw;
+    height: 50vw;
+  }
+  .am {
+    width: 50vw;
+    height: 50vw;
+    margin-top: 0vw;
+  }
+  .left {
+    position: relative;
+    margin-top: -50vw;
+    margin-bottom: 10vw;
+    padding-left: 2%;
+  }
+  .left #ambuvians {
+    font-size: 6vw;
+    margin-left: 3rem;
+  }
+  .left .slogan {
+    width: 75%;
+    margin-left: 3rem;
+    font-size: 2vw;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    font-size: 1.5vw;
+  }
+  
+
+  #facts {
+    font-size: 1.5vw;
+    width: 300px;
+    height: 100px;
+    margin-left: 14vw;
+  }
+}
+@media (min-width: 2101px) and (max-width: 2560px) {
+  .First-section {
+    margin-bottom: 3vw;
+  }
+  .right {
+    margin-left: 40vw;
+    width: 60vw;
+    height: 50vw;
+  }
+  .am {
+    width: 50vw;
+    margin-bottom: 10vw;
+    padding-left: 2%;
+  }
+  .left #ambuvians {
+    font-size: 6vw;
+    margin-left: 3rem;
+  }
+  .left .slogan {
+    width: 75%;
+    margin-left: 3rem;
+    font-size: 2vw;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    font-size: 1.5vw;
+  }
+
+  #facts {
+    font-size: 1.5vw;
+    width: 300px;
+    height: 100px;
+    margin-left: 14vw;
+  }
+}
+@media (min-width: 1441px) and (max-width: 2100px) {
+  .First-section {
+    margin-bottom: 3vw;
+  }
+  .right {
+    margin-left: 40vw;
+    width: 60vw;
+    height: 50vw;
+  }
+  .am {
+    width: 50vw;
+  }
+  .left {
+    position: relative;
+    margin-top: -50vw;
+    margin-bottom: 10vw;
+    padding-left: 2%;
+  }
+  .left #ambuvians {
+    font-size: 6vw;
+    margin-left: 3rem;
+  }
+  .left .slogan {
+    width: 75%;
+    margin-left: 3rem;
+    font-size: 2vw;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    font-size: 1.5vw;
+  }
+
+  #facts {
+    width: 150px;
+    height: 60px;
+    margin-left: 14vw;
+  }
+}
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .First-section {
+    margin-bottom: 3vw;
+  }
+  .right {
+    margin-left: 40vw;
+    width: 60vw;
+    height: 50vw;
+  }
+  .am {
+    width: 50vw;
+  }
+  .left {
+    position: relative;
+    margin-top: -50vw;
+    margin-bottom: 10vw;
+    padding-left: 2%;
+  }
+  .left #ambuvians {
+    font-size: 6vw;
+    margin-left: 3rem;
+  }
+  .left .slogan {
+    width: 75%;
+    margin-left: 3rem;
+    font-size: 2vw;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    font-size: 1.5vw;
+  }
+
+  #facts {
+    width: 150px;
+    height: 60px;
+    margin-left: 14vw;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .First-section {
+    margin-bottom: 3vw;
+  }
+  .right {
+    margin-left: 40vw;
+    width: 60vw;
+    height: 50vw;
+  }
+  .am {
+    width: 50vw;
+  }
+  .left {
+    position: relative;
+    margin-top: -50vw;
+    margin-bottom: 10vw;
+    padding-left: 2%;
+  }
+  .left #ambuvians {
+    font-size: 6vw;
+    margin-left: 3rem;
+  }
+  .left .slogan {
+    width: 75%;
+    margin-left: 3rem;
+    font-size: 2vw;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    font-size: 1.5vw;
+  }
+
+  #facts {
+    width: 150px;
+    height: 60px;
+    margin-left: 14vw;
+    font-size: x-small;
+    border: 4px solid;
+    transition: 0.15s all ease-in-out;
+    border-image-slice: 1;
+    border-image-source: -webkit-linear-gradient(
+      0deg,
+      #48abe0 0%,
+      #00478f 100%
+    );
+  }
+  #facts:hover {
+    font-size: x-small;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .First-section {
+    margin-bottom: 4vw;
+  }
+  .right {
+    margin-left: 40vw;
+    width: 60vw;
+    height: 50vw;
+  }
+  .am {
+    width: 50vw;
+  }
+  .left {
+    position: relative;
+    margin-top: -50vw;
+    margin-bottom: 10vw;
+    padding-left: 2%;
+  }
+  .left #ambuvians {
+    font-size: 6vw;
+    margin-left: 3rem;
+  }
+  .left .slogan {
+    width: 75%;
+    margin-left: 3rem;
+    font-size: 16px;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 55%;
+    left: 22%;
+    font-size: 1.5vw;
+  }
+
+  #facts {
+    width: 150px;
+    height: 36px;
+    margin-left: 13vw;
+    font-size: x-small;
+    border: 4px solid;
+    transition: 0.15s all ease-in-out;
+    border-image-slice: 1;
+    border-image-source: -webkit-linear-gradient(
+      0deg,
+      #48abe0 0%,
+      #00478f 100%
+    );
+  }
+  #facts:hover {
+    font-size: x-small;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .First-section {
+    margin-bottom: 6vw;
+  }
+  .right {
+    margin-left: 40vw;
+    width: 60vw;
+    height: 50vw;
+  }
+  .am {
+    width: 50vw;
+  }
+  .left {
+    position: relative;
+    margin-top: -50vw;
+    margin-bottom: 5vw;
+    padding-left: 2%;
+  }
+
+  .left .slogan {
+    font-size: 2.5vw;
+    margin-left: 3rem;
+    width: 75%;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 44%;
+    left: 22%;
+    font-size: 1.5vw;
+  }
+
+  .left #ambuvians {
+    font-size: 40px;
+    margin-left: 3rem;
+  }
+
+  #facts {
+    margin-left: 9vw;
+
+    margin-top: 1rem;
+    width: 150px;
+    height: 36px;
+    font-size: x-small;
+    border: 4px solid;
+    transition: 0.15s all ease-in-out;
+    border-image-slice: 1;
+    border-image-source: -webkit-linear-gradient(
+      0deg,
+      #48abe0 0%,
+      #00478f 100%
+    );
+  }
+  #facts:hover {
+    font-size: x-small;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .First-section {
+    margin-bottom: 6vw;
+  }
+  .right {
+    width: 100vw;
+    height: 80vw;
+  }
+  .am {
+    width: 50vw;
+    margin-top: 10vw;
+  }
+  .left {
+    margin-top: -90vw;
+    margin-bottom: 20vw;
+  }
+  .left #ambuvians {
+    font-size: 9vw;
+    margin-left: 4vw;
+  }
+
+  .left .slogan {
+    font-size: 4vw;
+    width: 85%;
+    margin-left: 6vw;
+  }
+
+  #facts {
+    margin-left: 15vw;
+    width: 15vw;
+    font-size: 3vw;
+    height: 10vw;
+    margin-top: 4vw;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: -webkit-linear-gradient(
+      0deg,
+      #48abe0 0%,
+      #00478f 100%
+    );
+  }
+
+  #facts:hover {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 319px) {
+  .right {
+    width: 50vw;
+    height: 50vw;
+  }
+
+  .left {
+    width: 50vw;
+    height: auto;
+  }
+  .left #ambuvians {
+    font-size: 70px;
+    font-weight: 800;
+    margin-top: 20%;
+    margin-left: 5rem;
+  }
+
+  .left .slogan {
+    font-size: 25px;
+    width: 60%;
+    height: auto;
+    margin-left: 5rem;
+  }
+
+  #facts {
+    width: 300px;
+    height: 75px;
+    font-size: 2vw;
+    margin-top: 3rem;
+    margin-left: 6rem;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: -webkit-linear-gradient(
+      0deg,
+      #48abe0 0%,
+      #00478f 100%
+    );
+  }
+  .First-section {
+    margin-bottom: 6vw;
+  }
+  .right {
+    width: 100vw;
+    /* height: 80vw; */
+  }
+  .am {
+    width: 50vw;
+    margin-top: 10vw;
+  }
+  .left {
+    margin-top: -65vw;
+    margin-bottom: 20vw;
+  }
+  .left #ambuvians {
+    font-size: 9vw;
+    margin-left: 4vw;
+  }
+
+  .left .slogan {
+    font-size: 4vw;
+    width: 85%;
+    margin-left: 6vw;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 63%;
+    left: 22%;
+    font-size: 1.8vw;
+  }
+
+  #facts {
+    margin-left: 15vw;
+    width: 15vw;
+    font-size: 3vw;
+    height: 10vw;
+    margin-top: 4vw;
+    border: 2px solid;
+    border-image-slice: 1;
+    border-image-source: -webkit-linear-gradient(
+      0deg,
+      #48abe0 0%,
+      #00478f 100%
+    );
+  }
+
+  #facts:hover {
+    font-size: x-small;
+  }
+}
+
+@media (max-width: 540px) {
+  .right {
+    display: none;
+  }
+  .First-section {
+    margin-bottom: 6vw;
+  }
+  .left {
+    position: relative;
+    width: 100vw;
+    margin-top: -10vw;
+    margin-bottom: 5vw;
+    text-align: center;
+  }
+
+  .left .slogan {
+    font-size: 3.8vw;
+    margin-left: 10vw;
+    width: 75%;
+    text-align: center;
+  }
+
+  .left #ambuvians {
+    font-size: 40px;
+    width: 98vw;
+    margin-left: 0;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 63%;
+    left: 22%;
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 420px) {
+  .left .slogan {
+    font-size: 4vw;
+  }
+  .left .slogon1 {
+    position: absolute;
+    top: 57%;
+    left: 50%;
+    font-size: 2.5vw;
+  }
+}

@@ -1,0 +1,596 @@
+.note {
+  display: flex;
+  margin-left: 0.5vw;
+  align-items: center;
+  align-content: center;
+  justify-content: space-evenly;
+  background: -webkit-linear-gradient(0deg, #48abe0 0%, #00478f 100%);
+  width: 99vw;
+  border-radius: 3rem;
+  height: 30vw;
+  margin-top: 5rem;
+  text-align: center;
+}
+.leftnote {
+  height: 400px;
+  width: 400px;
+  border-radius: inherit;
+  perspective: 800px;
+}
+.note-card {
+  position: relative;
+  transition: transform 1000ms;
+  height: 100%;
+  width: 100%;
+  border-top-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+  transform-style: preserve-3d;
+}
+
+.leftnote:hover > .note-card {
+  transform: rotateY(180deg);
+}
+.front,
+.back {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  text-align: center;
+}
+.front {
+  border-top-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.back {
+  display: flex;
+  transform: rotateY(180deg);
+  justify-content: center;
+  align-items: center;
+  font-size: 80%;
+  border-top-left-radius: inherit;
+  border-bottom-right-radius: inherit;
+}
+.rightnote {
+  display: flex;
+  width: 60%;
+  height: 90%;
+  flex-direction: column;
+  margin-left: 2%;
+}
+#dir {
+  display: flex;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-size: 3.6rem;
+  font-weight: 100;
+}
+#yash {
+  font-family: "Times New Roman", Times, serif;
+  color: #f00;
+  font-size: 2.6rem;
+  align-self: center;
+}
+#ed {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  color: #fff;
+  font-size: 1.6rem;
+  align-self: center;
+}
+#aim {
+  align-self: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-top: 3%;
+}
+#good {
+  align-self: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #fff;
+  font-size: 1.5rem;
+  margin-top: 5%;
+}
+#mr {
+  text-decoration: underline;
+  color: #fff;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.4rem;
+  align-self: flex-end;
+}
+
+.sir-social {
+  height: 40px;
+  width: 35px;
+  margin-left: 8px;
+}
+
+@media only screen and (max-width: 1270px) {
+  .rightnote {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .note {
+    border-radius: 1.5rem;
+  }
+  .leftnote {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .note {
+    border-radius: 1.5rem;
+  }
+  .leftnote {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    height: 200px;
+    width: 200px;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .note {
+    border-radius: 1rem;
+    margin-top: 2.5rem;
+  }
+  .leftnote {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media (min-width: 2561px) {
+  .rightnote {
+    width: 55%;
+  }
+  #dir {
+    font-size: 4vw;
+  }
+  #yash {
+    font-size: 2vw;
+  }
+  #ed {
+    font-size: 1.5vw;
+  }
+  #aim {
+    font-size: 1.25vw;
+  }
+  #good,
+  #mr {
+    font-size: 1.5vw;
+  }
+  .director {
+    height: 28vw;
+    width: 25vw;
+    border-radius: 5vw 0 5vw 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    margin-top: -7vw;
+  }
+  .director-back {
+    position: absolute;
+    height: 28vw;
+    width: 27vw;
+    border-radius: 5vw 0 5vw 0;
+  }
+  .flip-text {
+    position: relative;
+    font-size: x-large;
+  }
+  .sir-social {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}
+@media (min-width: 2101px) and (max-width: 2560px) {
+  .rightnote {
+    width: 55%;
+  }
+  #dir {
+    font-size: 4vw;
+  }
+  #yash {
+    font-size: 2vw;
+  }
+  #ed {
+    font-size: 1.5vw;
+  }
+  #aim {
+    font-size: 1.25vw;
+  }
+  #good,
+  #mr {
+    font-size: 1.5vw;
+  }
+  .director {
+    height: 28vw;
+    width: 25vw;
+    border-radius: 5vw 0 5vw 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    margin-top: -5.5vw;
+  }
+  .director-back {
+    position: absolute;
+    height: 28vw;
+    width: 27vw;
+    border-radius: 5vw 0 5vw 0;
+  }
+  .flip-text {
+    position: relative;
+    font-size: x-large;
+  }
+  .sir-social {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}
+@media (min-width: 1441px) and (max-width: 2100px) {
+  .rightnote {
+    width: 55%;
+  }
+  #dir {
+    font-size: 4vw;
+  }
+  #yash {
+    font-size: 2vw;
+  }
+  #ed {
+    font-size: 1.5vw;
+  }
+  #aim {
+    font-size: 1.25vw;
+  }
+  #good,
+  #mr {
+    font-size: 1.5vw;
+  }
+  .director {
+    height: 28vw;
+    width: 25vw;
+    border-radius: 5vw 0 5vw 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    margin-top: -4vw;
+  }
+  .director-back {
+    position: absolute;
+    height: 28vw;
+    width: 27vw;
+    border-radius: 5vw 0 5vw 0;
+  }
+  .flip-text {
+    position: relative;
+    font-size: x-large;
+  }
+  .sir-social {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 1700px) {
+  .director {
+    margin-top: -2vw;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+  .rightnote {
+    width: 55%;
+  }
+  #dir {
+    font-size: 4vw;
+  }
+  #yash {
+    font-size: 2vw;
+  }
+  #ed {
+    font-size: 1.5vw;
+  }
+  #aim {
+    font-size: 1.25vw;
+  }
+  #good,
+  #mr {
+    font-size: 1.5vw;
+  }
+  .director {
+    height: 28vw;
+    width: 25vw;
+    border-radius: 5vw 0 5vw 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+  }
+  .director-back {
+    position: absolute;
+    height: 28vw;
+    width: 27vw;
+    border-radius: 5vw 0 5vw 0;
+  }
+  .flip-text {
+    position: relative;
+    font-size: x-large;
+  }
+  .sir-social {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .rightnote {
+    width: 55%;
+  }
+  #dir {
+    font-size: 4vw;
+  }
+  #yash {
+    font-size: 2vw;
+  }
+  #ed {
+    font-size: 1.5vw;
+  }
+  #aim {
+    font-size: 1.25vw;
+  }
+  #good,
+  #mr {
+    font-size: 1.5vw;
+  }
+  .director {
+    height: 28vw;
+    width: 25vw;
+    border-radius: 5vw 0 5vw 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    margin-top: 2vw;
+  }
+
+  .director-back {
+    position: absolute;
+    height: 28vw;
+    width: 27vw;
+    border-radius: 5vw 0 5vw 0;
+  }
+  .flip-text {
+    position: relative;
+    font-size: x-large;
+  }
+  .sir-social {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}
+@media (min-width: 1025px) and (max-width: 1180px) {
+  .director {
+    margin-top: 3.5vw;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .rightnote {
+    width: 55%;
+  }
+  #dir {
+    font-size: 4vw;
+  }
+  #yash {
+    font-size: 2vw;
+  }
+  #ed {
+    font-size: 1.5vw;
+  }
+  #aim {
+    font-size: 1.25vw;
+  }
+  #good,
+  #mr {
+    font-size: 1.5vw;
+  }
+  .director {
+    height: 28vw;
+    width: 25vw;
+    border-radius: 5vw 0 5vw 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    margin-top: 6vw;
+  }
+  .director-back {
+    position: absolute;
+    height: 28vw;
+    width: 27vw;
+    border-radius: 5vw 0 5vw 0;
+  }
+  .flip-text {
+    position: relative;
+    font-size: x-large;
+  }
+  .sir-social {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}
+
+@media (min-width: 900px) and (max-width: 1024x) {
+  .director {
+    margin-top: 7vw;
+  }
+}
+@media (min-width: 800px) and (max-width: 900px) {
+  .director {
+    margin-top: 9vw;
+  }
+}
+@media (min-width: 700px) and (max-width: 800px) {
+  .director {
+    margin-top: -2vw;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 767px) {
+  .rightnote {
+    width: 55%;
+  }
+  #dir {
+    font-size: 4vw;
+  }
+  #yash {
+    font-size: 2vw;
+  }
+  #ed {
+    font-size: 1.5vw;
+  }
+  #aim {
+    font-size: 1.25vw;
+  }
+  #good,
+  #mr {
+    font-size: 1.5vw;
+  }
+  .director {
+    height: 28vw;
+    width: 25vw;
+    border-radius: 5vw 0 5vw 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    margin-top: 0vw;
+  }
+  .director-back {
+    position: absolute;
+    height: 28vw;
+    width: 27vw;
+    border-radius: 5vw 0 5vw 0;
+  }
+  .flip-text {
+    position: relative;
+    font-size: x-large;
+  }
+  .sir-social {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}
+@media (min-width: 551px) and (max-width: 650px) {
+  .director {
+    margin-top: -6vw;
+  }
+}
+@media (min-width: 481px) and (max-width: 550px) {
+  .director {
+    margin-top: -4vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .rightnote {
+    width: 55%;
+  }
+  #dir {
+    font-size: 4vw;
+  }
+  #yash {
+    font-size: 2vw;
+  }
+  #ed {
+    font-size: 1.5vw;
+  }
+  #aim {
+    font-size: 1.25vw;
+  }
+  #good,
+  #mr {
+    font-size: 1.5vw;
+  }
+  .director {
+    height: 28vw;
+    width: 25vw;
+    border-radius: 5vw 0 5vw 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    margin-top: -2vw;
+  }
+  .director-back {
+    position: absolute;
+    height: 28vw;
+    width: 27vw;
+    border-radius: 5vw 0 5vw 0;
+  }
+  .flip-text {
+    position: relative;
+    font-size: x-large;
+  }
+  .sir-social {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}
+
+@media (min-width: 320px) and (max-width: 380px) {
+  .director {
+    margin-top: 0vw;
+  }
+}
+
+@media (max-width: 319px) {
+  .rightnote {
+    width: 55%;
+  }
+  #dir {
+    font-size: 4vw;
+  }
+  #yash {
+    font-size: 2vw;
+  }
+  #ed {
+    font-size: 1.5vw;
+  }
+  #aim {
+    font-size: 1.25vw;
+  }
+  #good,
+  #mr {
+    font-size: 1.5vw;
+  }
+  .director {
+    height: 28vw;
+    width: 25vw;
+    border-radius: 5vw 0 5vw 0;
+    padding-bottom: 1vw;
+    padding-top: 1vw;
+    margin-top: 2vw;
+  }
+  .director-back {
+    position: absolute;
+    height: 28vw;
+    width: 27vw;
+    border-radius: 5vw 0 5vw 0;
+  }
+  .flip-text {
+    position: relative;
+    font-size: x-large;
+  }
+  .sir-social {
+    height: 4vw;
+    width: 4vw;
+    margin-left: 2vw;
+  }
+}

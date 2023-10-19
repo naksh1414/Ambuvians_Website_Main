@@ -1,0 +1,146 @@
+.how-it-works {
+    margin: 1.5vw;
+}
+
+/* how it works heading style */
+
+.how-it-works h1 {
+    background: linear-gradient(to right, #0092ee 0%, #203381 100%);
+    background-clip: text;
+
+    -webkit-background-clip: text;
+    font-size: 6vw;
+    text-align: center;
+    -webkit-text-fill-color: transparent;
+}
+
+/* how it works section style */
+
+.how-it-works-section {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 4vw;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.how-it-works-section div {
+    display: flex;
+    align-items: center;
+
+    justify-content: space-evenly;
+}
+
+/* how it works figure style */
+
+.how-it-works-section figure {
+    display: flex;
+    flex-direction: column;
+    gap: 1vw;
+    text-align: center;
+}
+
+/* how it works images style */
+
+.how-it-works-img {
+    height: 19vw;
+    width: auto;
+}
+
+/* how it works figcaption style */
+
+.how-it-works-figcaption {
+    font-size: 1.2vw;
+   font-family: "Inknut Antiqua", serif;}
+
+.arrow {
+    width: 9.75vw;
+}
+
+.down-arrow {
+    left: 85%;
+    position: absolute;
+    top: 55%;
+}
+
+@media (min-width: 1281px) {
+    .how-it-works-img {
+        height: 19vw;
+        width: auto;
+    }
+    .down-arrow {
+        height: 7vw;
+    }
+    .arrow {
+        width: 9.75vw;
+    }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+    .customer-support-figcaption {
+        font-size: 2vw;
+    }
+    .underline {
+        background-size: 30% 5px;
+    }
+    .down-arrow {
+        height: 7vw;
+    }
+    .arrow {
+        width: 9.75vw;
+    }
+}
+
+@media (min-width: 767px) and (max-width: 1024px) {
+    .customer-support-figcaption {
+        font-size: 2vw;
+    }
+    .underline {
+        background-size: 30% 5px;
+    }
+    .down-arrow {
+        height: 7vw;
+    }
+}
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 766px) {
+    .customer-support-figcaption {
+        font-size: 2vw;
+    }
+    .underline {
+        background-size: 30% 5px;
+    }
+    .down-arrow {
+        height: 7vw;
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .customer-support-figcaption {
+        font-size: 1.5vw;
+    }
+
+    .underline {
+        background-size: 30% 3px;
+    }
+
+    .selected-ambulance-feature-p {
+        font-size: 1.5vw;
+    }
+    .down-arrow {
+        height: 7vw;
+    }
+    .arrow {
+        width: 9vw;
+    }
+}

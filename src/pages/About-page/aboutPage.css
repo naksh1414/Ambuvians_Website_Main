@@ -1,0 +1,797 @@
+/* i use the meedia Query for the responsive design for the phone */
+/* first media query:- for the width bigger than 800 px */
+/* second media query:- for the width lesser than 800px */
+/* third media query:- for the width less that 1032 px and greater than 768 px */
+/* last for the width less than 426px */
+/* all the media query is at the last of the css code accordingly */
+
+/* external url for the fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Kadwa&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kaisei+Decol&family=Kalam:wght@300&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+/* predefineing the colors for our webpages */
+
+:root {
+  --bg-color: #fff;
+  --text-color: #000000;
+  --main-color: #29fd53;
+}
+
+body {
+  min-height: 100vh;
+  background: var(--bg-color);
+  color: var(--text-color);
+}
+
+/* for hide side scrollbar icon */
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* navbar section */
+
+button {
+  border: none;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+abbr {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* Adding style to navbar */
+
+li {
+  list-style: none;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+/* navbar styling */
+
+/* navbar basic styling */
+
+/* main header company section that contains the company image and name */
+
+.home {
+  position: relative;
+  display: flex;
+  min-height: 100vh;
+  background-size: cover;
+  background-position-y: 0px;
+  background-attachment: fixed;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.company h1 {
+  position: absolute;
+  text-align: center;
+  top: 30%;
+  font-size: 170px;
+  /* background: linear-gradient(to right, #0092ee 0%, #203381 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text; */
+  color:#000000;
+  font-family: "Inknut Antiqua", serif;
+
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: kadwa;
+  /* text-shadow: -3px -3px black; */
+}
+
+.company-quote {
+  position: absolute;
+  text-align: center;
+  font-size: 40px;
+  left: 0;
+  right: 0;
+  padding-top: 2%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* company's feature */
+
+.main_heading {
+  display: grid;
+  place-items: center;
+  font-family: "Kaisei Decol", serif;
+  font-size: 45px;
+  margin-top: 100px;
+  margin-bottom: 45px;
+  opacity: 0.7;
+}
+
+/* about us section that contain the small description about us */
+
+.about {
+  position: relative;
+  width: 100%;
+  height: 100vw;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 10px;
+}
+
+.about img {
+  display: none;
+}
+
+/* main text that contains about us */
+
+.about h1 {
+  text-align: center;
+  color: rgb(5, 99, 161);
+  font-family: Kadwa;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-size: 80px;
+  text-shadow: 0 0 3px rgb(97, 199, 247);
+}
+
+.about p {
+  position: relative;
+  margin-top: 30px;
+  background: rgb(16, 203, 253);
+  background: linear-gradient(
+    90deg,
+    rgba(16, 203, 253, 1) 0%,
+    rgba(0, 212, 255, 1) 0%,
+    rgba(17, 9, 121, 1) 100%
+  );
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  /* height: 65vh; */
+  font-family: "Kalam", cursive;
+  width: 45%;
+  font-size: 32px;
+  left: 55%;
+  overflow-y: auto;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+/* quotes of our company's */
+
+.quotes p {
+  text-align: center;
+  padding: 60px 0;
+  font-size: 200%;
+  color: #ff0000;
+}
+
+/* why choose us */
+
+.choose-us {
+  color: rgb(5, 99, 161);
+  font-family: kadwa;
+}
+
+/* main text and images that contains why choose us */
+
+.choose-us .choose-text {
+  text-align: center;
+  padding: 40px 0;
+  background-color: rgba(255, 255, 255, 0.7);
+  font-size: 20px;
+}
+
+.choose-us h2 {
+  font-size: 50px;
+}
+
+.choose-us .choose-img {
+  display: flex;
+  justify-content: space-around;
+  padding: 30px 0 50px 0;
+}
+
+.choose-img img:hover {
+  animation-name: slideUp;
+  animation-name: slideUp;
+  animation-duration: 1s;
+  animation-duration: 1s;
+  visibility: visible;
+  cursor: pointer;
+}
+
+@keyframes slideUp {
+  0% {
+    opacity: 0;
+    transform: translateY(40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+}
+
+.img-one img {
+  width: 120px;
+}
+
+.img-two p {
+  width: 250px;
+  margin-top: 15px;
+}
+.img-two img {
+  width: 180px;
+}
+.img-three img {
+  width: 100px;
+  padding-top: 20px;
+}
+.img-four img {
+  width: 120px;
+}
+
+/* Meet our team */
+
+.animate-char {
+  margin-top: 100px;
+  font-family: kadwa;
+  text-align: center;
+  font-size: 40px;
+}
+
+.animate-char {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+main {
+  position: relative;
+  width: calc(min(93rem, 84%));
+  margin: 0 auto;
+  min-height: 80vh;
+  column-gap: 3rem;
+  padding-block: min(11vh, 10rem);
+}
+
+/* different ViewPorts media queries */
+
+/* media query for the footer section */
+
+/* for mobile */
+
+/* media query for other section for mobile */
+
+@media (max-width: 800px) {
+  /* media query for the company */
+
+  .company p {
+    background-color: rgba(7, 7, 7, 0.4);
+    color: #fff;
+  }
+
+  .company img {
+    opacity: 0.8;
+    margin-top: 17%;
+  }
+
+  /* media query for the feature section */
+
+  /* media query for the about us section */
+
+  .about .about-text p {
+    position: relative;
+    margin: 10px;
+    left: 0;
+    right: 0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  /* media queries for who we are */
+
+  /* who we are */
+
+  .who-we-are-text {
+    padding: 0;
+  }
+
+  .choose-us .choose-img {
+    display: block;
+  }
+
+  .choose-us .img-two p {
+    text-align: center;
+    width: 100%;
+  }
+
+  /* media query for meet us */
+
+  /* media query for our partners */
+
+  .our-partners h1 {
+    font-size: 30px;
+  }
+
+  .our-partners .partners-logo .logo-one {
+    width: 100px;
+    height: 100px;
+    margin-top: 50px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* comapny image and heading section  */
+
+  /* us section */
+  .us p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 426px) {
+  /* main heading of the page that contain our company name */
+  .main_heading {
+    margin-top: 30px;
+  }
+
+  /* company"s main quote section */
+
+  /* why choose us section */
+  .choose-text h2 {
+    font-size: 40px;
+  }
+
+  .choose-text p {
+    font-size: 15px;
+    padding: 0 10px;
+  }
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+@media (min-width: 2560px) {
+  .company h1 {
+    font-size: 30rem;
+    /* text-shadow: -10px -10px black; */
+    top:3%;
+  }
+  .company-quote {
+    padding-top: 1.5%;
+  }
+
+  .about-text h1 {
+    font-size: 6rem;
+  }
+  .about p {
+    font-size: 3rem;
+    padding-top: 4rem;
+  }
+  .quotes p {
+    font-size: 3rem;
+  }
+  .about-we-text h2 {
+    font-size: 9rem;
+    padding-top: 4rem;
+  }
+
+  .who-we-are-text {
+    font-size: 6rem;
+    line-height: 7rem;
+  }
+
+  .choose-us h2 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 800px) and (max-width: 2160px) {
+  .about-we-text {
+    height: 70vw;
+  }
+}
+
+@media (min-width: 1441px) and (max-width: 2560px) {
+  .company h1 {
+    top: 10%;
+    font-size: 22rem;
+    /* text-shadow: -10px -10px black; */
+  }
+  .company-quote {
+    padding-top: 1.5%;
+    font-size: 6rem;
+  }
+  .main_heading {
+    font-size: 5rem;
+  }
+
+  .about-text h1 {
+    font-size: 7rem;
+  }
+  .about {
+    height: 60vw;
+  }
+  .about p {
+    font-size: 4.5rem;
+    height: 45vw;
+  }
+  .quotes p {
+    font-size: 3rem;
+  }
+  .about-we-text h2 {
+    font-size: 8rem;
+    padding-top: 4rem;
+  }
+
+  .who-we-are-text {
+    font-size: 6rem;
+    line-height: 6.5rem;
+  }
+
+  .choose-us h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 1400px) and (max-width: 1830px) {
+    
+  .who-we-are-text {
+    font-size: 4rem;
+    line-height: 5.5rem;
+  }
+  .about-we-text {
+    height: 69vw;
+  }
+
+  .about p {
+    font-size: 4rem;
+    height: 60vw;
+  }
+  .about {
+    height: 80vw;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1440px) {
+    .company h1 {
+        top:1%;
+        font-size: 16rem;
+        /* text-shadow: -6px -6px black; */
+      }
+  .company-quote {
+    padding-top: 1.5%;
+  }
+
+  .about-text h1 {
+    font-size: 6rem;
+  }
+  .about {
+    height: 80vw;
+  }
+  .about p {
+    font-size: 3.5rem;
+  }
+  .quotes p {
+    font-size: 3rem;
+  }
+  .about-we-text h2 {
+    font-size: 7rem;
+    padding-top: 4rem;
+  }
+
+  .who-we-are-text {
+    font-size: 3rem;
+    line-height: 1.2;
+  }
+
+  .choose-us h2 {
+    font-size: 4rem;
+  }
+  .about-we-text {
+    height: 60vw;
+  }
+}
+
+/* 
+    ##Device = Laptops, Desktops
+    ##Screen = B/w 1025px to 1280px
+  */
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    .company h1 {
+        top: -5%;
+        font-size: 16rem;
+      }
+  .company-quote {
+    padding-top: 1.5%;
+  }
+
+  .about-text h1 {
+    font-size: 6rem;
+  }
+  .about {
+    height: 80vw;
+  }
+  .about p {
+    font-size: 2.5rem;
+    height: 50vw;
+  }
+  .quotes p {
+    font-size: 3rem;
+  }
+  .about-we-text h2 {
+    font-size: 5rem;
+    padding-top: 4rem;
+  }
+
+  .who-we-are-text {
+    font-size: 2.5rem;
+    line-height: 1.2;
+  }
+
+  .choose-us h2 {
+    font-size: 4rem;
+  }
+  .about-we-text {
+    height: 60vw;
+  }
+}
+
+/* 
+    ##Device = Tablets, Ipads (portrait)
+    ##Screen = B/w 768px to 1024px
+  */
+
+@media (min-width: 768px) and (max-width: 1023px) {
+    .company h1 {
+        top: 3%;
+        font-size: 12rem;
+      }
+  .company-quote {
+    padding-top: 4%;
+    font-size: 3rem;
+  }
+  .main_heading {
+    font-size: 2.8rem;
+  }
+
+  .about-text h1 {
+    font-size: 5rem;
+  }
+  .about {
+    height: 80vw;
+  }
+  .about p {
+    font-size: 2.25rem;
+    height: 50vw;
+  }
+  .quotes p {
+    font-size: 2.4rem;
+  }
+  .about-we-text h2 {
+    font-size: 5rem;
+    padding-top: 4rem;
+  }
+
+  .who-we-are-text {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  .choose-us h2 {
+    font-size: 4rem;
+  }
+  .about-we-text {
+    height: 55vw;
+  }
+}
+
+/* 
+    ##Device = Low Resolution Tablets, Mobiles (Landscape)
+    ##Screen = B/w 481px to 767px
+  */
+
+@media (min-width: 590px) and (max-width: 767px) {
+    .company h1 {
+        top: 10%;
+        font-size: 8rem;
+      }
+  .company-quote {
+    padding-top: 3%;
+    font-size: 1.5rem;
+  }
+
+  .about-text h1 {
+    font-size: 5rem;
+  }
+  .about {
+    height: 130vw;
+  }
+  .about p {
+    font-size: 3rem;
+    height: 100vw;
+  }
+  .quotes p {
+    font-size: 2.4rem;
+  }
+  .about-we-text {
+    width: 85%;
+    height: 55vw;
+  }
+
+  .about-we {
+    height: 60vh;
+  }
+  .about-we-text h2 {
+    font-size: 3.5rem;
+    padding-top: 4rem;
+  }
+
+  .who-we-are-text {
+    font-size: 1.8rem;
+    line-height: 2.25rem;
+  }
+
+  .choose-us h2 {
+    font-size: 4rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 590px) {
+    .company h1 {
+        top: 10%;
+        font-size: 6rem;
+      }
+  .company-quote {
+    padding-top: 3%;
+    font-size: 1.5rem;
+  }
+
+  .about-text h1 {
+    font-size: 4rem;
+  }
+  .about p {
+    font-size: 2rem;
+    height: 60vw;
+  }
+  .quotes p {
+    font-size: 2.4rem;
+  }
+  .about-we-text h2 {
+    font-size: 2.6rem;
+    padding-top: 4rem;
+  }
+
+  .who-we-are-text {
+    font-size: 1.5rem;
+    line-height: 2.25rem;
+  }
+  .about-we-text {
+    width: 85%;
+    height: 90vw;
+  }
+
+  .about-we {
+    height: 60vh;
+  }
+
+  .choose-us h2 {
+    font-size: 4rem;
+  }
+}
+
+/* 
+    ##Device = Most of the Smartphones Mobiles (Portrait)
+    ##Screen = B/w 320px to 479px
+  */
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .company h1 {
+    font-size: 6.5rem;
+    top: 18%;
+  }
+  .company-quote {
+    padding-top: 3%;
+    font-size: 1.4rem;
+  }
+  .about-we {
+    height: 50vh;
+  }
+
+  .main_heading {
+    font-size: 1.3rem;
+  }
+
+  .about-text h1 {
+    font-size: 4rem;
+  }
+  .about {
+    height: 140vw;
+  }
+  .about p {
+    font-size: 2rem;
+  }
+  .quotes p {
+    font-size: 1.5rem;
+  }
+  .about-we-text h2 {
+    font-size: 2rem;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+  }
+  .about-we {
+    height: 40vh;
+  }
+
+  .who-we-are-text {
+    font-size: 1.15rem;
+    line-height: 1.75rem;
+    padding: 0 0.5vw;
+  }
+
+  .choose-us h2 {
+    font-size: 4rem;
+  }
+  .about-we-text {
+    width: 85%;
+    height: 75vw;
+  }
+
+  .about-we {
+    height: 60vh;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 480px) {
+  .about-we-text {
+    height: 60vw;
+  }
+}

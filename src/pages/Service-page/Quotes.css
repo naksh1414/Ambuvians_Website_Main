@@ -1,0 +1,47 @@
+/* quote styling */
+.quote {
+    /* background-image: url("images/image\ 17.webp"); */
+    /* background: url("videos/quote.mp4"); */
+    position: relative;
+    /* overflow: hidden; */
+    width: 100%;
+    height: 28vw;
+
+    border: 0px solid #343cff;
+    /* side bars effect */
+    box-shadow: 7px 5px 4px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.quote .video {
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 25vw;
+    position: absolute;
+    object-fit: cover;
+    overflow: hidden;
+}
+
+.text-box {
+    position: absolute;
+    font-family: "Kaisei Decol", Calibri, serif;
+
+    width: 100%;
+    height: 25vw;
+
+    padding: 2vw 0.5vw;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: baseline;
+    font-size: 3.5vw;
+    text-align: center;
+
+    color: #000;
+    background: #fff;
+    mix-blend-mode: screen;
+}
+.gif {
+    width: 100%;
+}
